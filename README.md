@@ -63,7 +63,7 @@ Posible values: `'html'`, `'js'` and `'css'`
 
 #### env
 
-Type `string`
+Type `string` or `array`
 
 Default: `process.env.NODE_ENV`
 
