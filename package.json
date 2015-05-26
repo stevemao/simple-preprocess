@@ -1,6 +1,6 @@
 {
   "name": "simple-preprocess",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Preprocess html, js and css based off environment configuration",
   "homepage": "https://github.com/stevemao/simple-preprocess",
   "author": {
