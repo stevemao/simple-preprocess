@@ -18,7 +18,7 @@ $ npm install --save simple-preprocess
 ```js
 var simplePreprocess = require('simple-preprocess');
 
-simplePreprocess('/* @if dev */\nbody {\nbackground: red;\n}\n/* @endif */\n/* @if test*/\n/*body {\nbackground: yellow;\n}*/\n/* @endif*/', 'js', 'dev');
+simplePreprocess('/* @if dev */\nbody {\nbackground: red;\n}\n/* @endif */\n/* @if test*/\n/*body {\nbackground: yellow;\n}*/\n/* @endif*/', 'css', 'dev');
 /*=> {
   data: 'body {\nbackground: red;\n}\n',
   retained: ['/* @if dev *\/\nbody {\nbackground: red;\n}\n/* @endif *\/\n'],
