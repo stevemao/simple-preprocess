@@ -1,0 +1,50 @@
+{
+  "name": "simple-preprocess",
+  "version": "0.0.0",
+  "description": "Preprocess html, js and css based off environment configuration",
+  "homepage": "https://github.com/stevemao/simple-preprocess",
+  "author": {
+    "name": "Steve Mao",
+    "email": "maochenyan@gmail.com",
+    "url": "https://github.com/stevemao"
+  },
+  "repository": "stevemao/simple-preprocess",
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
+  "keywords": [
+    "simple-preprocess",
+    "ENV",
+    "environment",
+    "if",
+    "endif",
+    "process",
+    "simple",
+    "fast",
+    "preprocess",
+    "pragma"
+  ],
+  "dependencies": {
+    "chalk": "^1.0.0",
+    "concat-stream": "^1.4.8",
+    "meow": "^3.1.0",
+    "uncomment-it": "^1.0.0"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.2",
+    "istanbul": "^0.3.14",
+    "jscs": "^1.13.1",
+    "jshint": "^2.7.0",
+    "mocha": "*"
+  },
+  "scripts": {
+    "coverage": "NODE_ENV=test istanbul cover _mocha -- -R spec && rm -rf ./coverage",
+    "lint": "jshint *.js test/test.js --exclude node_modules && jscs *.js test/test.js",
+    "test": "npm run-script lint && NODE_ENV=test mocha"
+  },
+  "bin": {
+    "simple-preprocess": "cli.js"
+  }
+}
