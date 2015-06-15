@@ -84,7 +84,7 @@ if (process.stdin.isTTY) {
         }
       });
     } else {
-      console._stdout.write(result.data);
+      process.stdout.write(result.data);
     }
 
     extraInfo(result.retained, result.stripped);
@@ -95,7 +95,7 @@ if (process.stdin.isTTY) {
   process.stdin
     .pipe(concat(function(data) {
       var result = simplePreprocess(data, type, env);
-      console._stdout.write(result.data);
+      process.stdout.write(result.data);
       extraInfo(result.retained, result.stripped);
     }));
 }
