@@ -74,6 +74,11 @@ Default: `process.env.NODE_ENV`
 - [grunt-simple-preprocess](https://github.com/stevemao/grunt-simple-preprocess)
 
 
+## Related
+
+If you are using a bundler, you can use loose-envify (https://github.com/zertosh/loose-envify) for browserify or DefinePlugin for webpack (http://stackoverflow.com/questions/30030031) to ensure you have the correct code for your production build.
+
+
 ## License
 
 MIT © [Steve Mao](https://github.com/stevemao)
